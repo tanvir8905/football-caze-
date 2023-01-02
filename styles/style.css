@@ -51,4 +51,50 @@ body{
     padding: 13px 30px;
     border: 0;
     border-radius: 4px;
+    cursor: pointer;
+    color: white;
+    background-color: blue;
+}
+
+#header-info button:hover {
+    background-color: green;
+    transition: .9s;
+}
+
+/* pad responsive style  */
+@media only screen and (min-width: 689px) and (max-width: 992px){
+    .header-container {
+        flex-direction: column;
+        margin: 5%;
+        padding: 0;
+        width: 90%;
+    }
+    
+    .header-section img {
+        width: 100%;
+    }
+
+    #header-info {
+        margin-bottom: 30px;
+        width: 100%;
+    }
+}
+
+/* mobile responsive style  */
+@media only screen and (max-width: 688px) {
+    .header-container {
+        flex-direction: column;
+        margin: 5%;
+        padding: 0;
+        width: 90%;
+    }
+
+    .header-section img {
+        width: 100%;
+    }
+
+    #header-info {
+        margin-bottom: 30px;
+        width: 100%;
+    }
 }
