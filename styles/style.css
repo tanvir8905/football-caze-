@@ -106,3 +106,64 @@ body{
         margin-bottom: 10px;
     }
 }
+
+/* blog area style  */
+
+/* blog buttons section  */
+.blog-container{
+    display: flex;
+    margin: 70px 0;
+    width: 100%;
+}
+
+.blog-buttons{
+    display: flex;
+    flex-direction: column;
+    margin: 0 30px;
+    padding: 20px;
+    background-color: black;
+    height: 200px;
+    width: 200px;
+    border-radius: 10px;
+}
+
+.blog-button{
+    margin: 12px;
+    padding: 12px;
+    border-radius: 10px;
+}
+
+.selected-btn{
+    color: white;
+    background-color: red;
+}
+
+/* blog cards section  */
+.blog-sections{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.single-blog{
+    border: 1px solid lightgray;
+    border-radius: 15px;
+    padding: 0px;
+}
+
+.single-blog img{
+    width: 100%;
+    margin-bottom: 7px;
+}
+
+.blog-info{
+    padding: 10px;
+}
+
+.blog-stats{
+    display: flex;
+}
+
+.fa-solid{
+    margin: 10px;
+}
