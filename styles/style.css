@@ -59,42 +59,50 @@ body{
 #header-info button:hover {
     background-color: green;
     transition: .9s;
+    transform: scale(1.1);
 }
 
 /* pad responsive style  */
-@media only screen and (min-width: 689px) and (max-width: 992px){
-    .header-container {
-        flex-direction: column;
-        margin: 5%;
-        padding: 0;
-        width: 90%;
-    }
+@media only screen and (min-width: 689px) and (max-width: 992px){    
+        .header-section {
+            width: 50%;
+        }
     
-    .header-section img {
-        width: 100%;
-    }
-
-    #header-info {
-        margin-bottom: 30px;
-        width: 100%;
-    }
+        .header-section img {
+            width: 100%;
+        }
+    
+        .header-section h1 {
+            font-size: 30px;
+        }
+    
+        #header-info {
+            padding-top: 100px;
+        }
 }
 
 /* mobile responsive style  */
 @media only screen and (max-width: 688px) {
     .header-container {
         flex-direction: column;
-        margin: 5%;
-        padding: 0;
-        width: 90%;
+        align-items: center;
+        text-align: center;
+    }
+
+    .header-section {
+        width: 50%;
     }
 
     .header-section img {
         width: 100%;
     }
+    
+    .header-section h1 {
+        font-size: 30px;
+    }
 
     #header-info {
-        margin-bottom: 30px;
         width: 100%;
+        margin-bottom: 10px;
     }
 }
