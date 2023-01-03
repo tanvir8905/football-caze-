@@ -91,6 +91,12 @@ body{
     font-size: 20px;
 }
 
+.blog-button:hover {
+    cursor: pointer;
+    background-color: gray;
+    color: white;
+}
+
 .blog-button a {
     text-decoration: none;
 }
@@ -99,9 +105,14 @@ body{
     cursor: pointer;
 }
 
-.selected-btn, .selected-btn a{
+.selected-btn{
     color: white;
     background-color: red;
+}
+
+.selected-btn:hover {
+    color: red;
+    background-color: white;
 }
 
 /* blog cards section  */
@@ -116,6 +127,12 @@ body{
     border: 1px solid lightgray;
     border-radius: 15px;
     width: 400px;
+    overflow: hidden;
+}
+
+.single-blog img:hover {
+    transform: scale(1.2);
+    transition: 2s;
 }
 
 .blog-img{
