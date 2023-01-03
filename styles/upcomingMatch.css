@@ -106,8 +106,7 @@ body{
     cursor: pointer;
 }
 
-.selected-btn,
-.selected-btn a{
+.selected-btn{
     color: white;
     background-color: red;
 }
@@ -115,6 +114,10 @@ body{
 .selected-btn:hover {
     color: red;
     background-color: white;
+}
+
+.selected-btn a:hover {
+    color: red;
 }
 
 /* blog cards section  */
