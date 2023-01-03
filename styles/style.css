@@ -20,7 +20,7 @@ body{
     padding: 40px 40px 0 70px;
     background-color: black;
     color: white;
-    margin: 30px;
+    margin: 60px 60px 0px;
     border-radius: 40px;
 }
 
@@ -62,7 +62,7 @@ body{
     transform: scale(1.1);
 }
 
-/* pad responsive style  */
+/* header pad responsive style  */
 @media only screen and (min-width: 689px) and (max-width: 992px){    
         .header-section {
             width: 50%;
@@ -81,7 +81,7 @@ body{
         }
 }
 
-/* mobile responsive style  */
+/* header mobile responsive style  */
 @media only screen and (max-width: 688px) {
     .header-container {
         flex-direction: column;
@@ -112,7 +112,7 @@ body{
 /* blog buttons section  */
 .blog-container{
     display: flex;
-    margin: 70px 0;
+    margin: 30px 0;
     width: 100%;
 }
 
@@ -153,11 +153,21 @@ body{
 
 .single-blog img{
     width: 100%;
-    margin-bottom: 7px;
 }
 
 .blog-info{
     padding: 10px;
+}
+
+.blog-category{
+    border: 1px solid gray;
+    border-radius:  5px;
+    padding: 10px;
+    width: 60px;
+}
+
+.match-time{
+    margin-right: 30px;
 }
 
 .blog-stats{
@@ -165,5 +175,67 @@ body{
 }
 
 .fa-solid{
-    margin: 10px;
+    margin: 4px;
+}
+
+/* blogs pad responsive style  */
+@media only screen and (min-width: 689px) and (max-width: 992px) {
+    .blog-container {
+     flex-direction: column;
+    }
+
+    .blog-buttons {
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-evenly;
+        height: 80px;
+        width: 100%;
+        background-color: white;
+    }
+    
+    .blog-button {
+        border: 1px solid lightgrey;
+        width: 200px;
+        font-size: 1.1rem;
+        font-weight: 600;
+    }
+
+    .blog-sections {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+/* blogs mobile responsive style  */
+@media only screen and (max-width: 688px) {
+    .blog-container {
+        flex-direction: column;
+    }
+
+    .blog-buttons {
+        width: 100%;
+        flex-direction: column;
+        height: 150px;
+        justify-content: center;
+        align-items: center;
+        margin: 30px 0px;
+        background-color: white;
+    }
+
+    .blog-button {
+        border: 1px solid lightgrey;
+        width: 200px;
+        font-size: 1.1rem;  
+        font-weight: 600;
+    }
+
+    .blog-sections {
+        grid-template-columns: repeat(1, 1fr);
+        /* justify-content: center; */
+        margin-left: 60px;
+    }
+
+    .single-blog {
+        width: 400px;
+    }
 }
