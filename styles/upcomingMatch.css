@@ -106,7 +106,8 @@ body{
     cursor: pointer;
 }
 
-.selected-btn{
+.selected-btn,
+.selected-btn a{
     color: white;
     background-color: red;
 }
