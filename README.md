@@ -7,6 +7,6 @@
     <li>CSS</li>
 </ul>
 
-## Information: Football Craze is a demo football website look like... 6939 -> collab 1
+## Information: Football Craze is a demo football website look like. Stay tuned!
 
 ## Live Site: https://tanvir8905.github.io/football-craze/
